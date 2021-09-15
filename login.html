@@ -1,0 +1,305 @@
+<html>
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--  <link rel="stylesheet" href="css/formLogin2.css">!-->
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+   
+    <!--style.css-->
+
+    <style>
+        *{
+          padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: myFirstFont;   
+        }
+        @font-face {
+            font-family: myFirstFont;
+            src: url(fonts/Asmaa\ Font.otf);
+        }
+        body{
+            background: rbg(219,226,226);
+            direction:rtl;
+            /*text-align:right !important;*/
+            /*background-image:url(images/logbn.png);
+            background-repeat: no-repeat;*/
+            background-size: cover;
+            overflow: hidden;
+            background-color:#f9f9fb;
+        }
+        .navbar-brand {
+         padding-top: unset;
+    
+        }
+        .navbar-nav .nav-link{
+          text-align:center;
+        }
+        #navbarSupportedContent {
+            padding-top: unset;
+            z-index:4;
+            
+        }
+        section{
+       
+        width:50%;
+        
+        padding:30px;
+        margin-top:40px;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition:all ease-in-out .6s;
+       
+      }
+      .modal-header{
+          align-items:baseline !important;
+      }
+
+       .btn{
+        display: block;
+        margin:auto;
+        background-color: #eb5a7b;
+        color:white;
+        border-radius:10px solid blue;
+        opacity:.5;
+      }
+      .btn:hover{
+        transition:all ease-in-out .5s;
+        color:white;
+        border-radius:10px solid #eb5a7b;
+        opacity:1;
+      }
+      label:first-child{
+          
+          margin-left: 85%;
+      }
+      .form-group,.form-check{
+       
+        margin:auto;
+      }
+     .head{
+         background-color:#9dd5f8;
+     }
+     .modal{
+         direction:rtl;
+     }
+     .navbar {
+   
+        align-items:center;
+        padding: unset;
+        }
+     label{
+         width:100%;
+     }
+     /***********media query for navabar****************/
+     @media (min-width:330px){
+         .navbar{
+            direction: ltr !important;
+         }
+         @media (min-width:992px){
+         .navbar{
+            direction: rtl !important;
+         }
+        }
+     }
+    </style>
+    
+    </head>
+    <body >
+      <!--start header-->
+      <div class="header" style="height:70px;">
+        <!--*********************************************modal***************************************************-->
+       
+       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="text-center">
+             <img src="images/cov22.png" style="height:50%;">
+           </div>
+           <div class="modal-content">
+             
+             <div class="modal-header text-center bg-danger text-light">
+             
+               <h5 class="modal-title w-50" id="exampleModalLabel">سوبر  بيبى</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true" class="text-light w-50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <P class="lead modalp">
+                
+                 أهلًا بك إلى المنصّة الأولى والأكثر متعة لتعلّم اللغة العربية
+                 ، قصص متدرّجة بالصعوبة، فيديوهات دروس كرتونيّة ممتعة، تمارين تفاعلية، أوراق عمل، وألعاب تعليمية ممتعة.
+             </P>
+             </div>
+             
+           </div>
+         </div>
+       </div><!--end modal-->
+                   <!--*************start navbar*********************-->
+                   <nav class="navbar navbar-expand-lg navbar-light ">
+                       <a class="navbar-brand" href="#" style="font-size:40px;font-weight: bolder;"><span>
+                         <img  src="images/icon1-removebg-preview (1).png" width="80">
+                         <span id="head">سوبر بيبى</span></a>
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon outline-none">
+                               <i class="fas fa-align-justify"></i>
+                           </span>
+                       </button>
+       
+                       <div class="collapse navbar-collapse whoareu mr-auto" id="navbarSupportedContent" style="margin-left:unset;">
+                           <ul class="navbar-nav  mr-auto">
+                             <li class="nav-item">
+                               <a class="nav-link ml-3  home" href="index.html">الصفحه الرئيسيه</a>
+                              </li>
+                               <li class="nav-item ">
+                                <!-- Button trigger modal -->
+                                   <a class="nav-link ml-3 whoareuu"  data-toggle="modal" data-target="#exampleModal">من نحن</a>
+                               </li>
+       
+                               <li class="nav-item">
+                                   <a class="nav-link ml-3 contactus" href="#">تواصل معانا</a>
+                               </li>
+                           </ul>
+                          
+                       </div>
+                   </nav>
+</div>  
+<!---********************************section login*************************************************-->     
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="text-center">
+        <img src="images/cov22.png" style="height:50%;">
+      </div>
+      <div class="modal-content">
+        
+        <div class="modal-header text-center bg-danger text-light" style="display:flex;justify-content: space-between;align-items:end !important;">
+        
+          <h5 class="modal-title" id="exampleModalLabel">سوبر بييبى</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="text-ligh">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <P class="lead">
+            أهلًا بك إلى المنصّة الأولى والأكثر متعة لتعلّم اللغة العربية
+            ، قصص متدرّجة بالصعوبة، فيديوهات دروس كرتونيّة ممتعة، تمارين تفاعلية، أوراق عمل، وألعاب تعليمية ممتعة.
+        </P>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+<section class="container-fluid">
+   
+    <h1 class="text-center mt-4 welcome">مرحبا بك</h1>
+      <form class="row from">
+        
+        
+        <div class="form-group col-sm-12 col-md-8">
+          <label for="exampleInputEmail1" style="margin-left:99%;" id="eml">الايميل</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group col-sm-12 col-md-8 mb-4">
+          <label for="Password1" id="password">كلمه المرور</label>
+          <input type="password" class="form-control " id="Password1">
+        </div>
+        <div class="form-check col-sm-12 col-md-8 d-none">
+          <input type="checkbox" class="form-check-input" id="Check1">
+          <label class="form-check-label mr-4 mb-4 remebr" for="Check1">تذكرنى</label>
+        </div>
+        <button type="submit" class="btn  mb-4 col-sm-12 col-md-7  d-block lgn" style="background-color:#00adb5;">تسجيل الدخول</button>
+        <button type="submit" class="btn  mb-4 col-sm-12 col-md-7 d-block lgnfb" style="background-color:#1877f2;">
+            
+            يمكنك التسجيل من خلال الفيس بوك
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </button>
+        <button type="submit" class="btn  mb-4 col-sm-12 col-md-7 d-block lgng" style="background-color:#db4437;">
+            يمكنك التسجيل من خلال جوجل
+            <i class="fa fa-google" aria-hidden="true"></i>
+
+        </button>
+    
+      </form>
+    </section>
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--my custom script-->
+    <script src="js/login.js"></script>
+    <script>
+     
+    window.addEventListener('load',function(){
+      
+      var lang=localStorage.getItem('lang');
+    
+    if(lang=='ar'){
+      
+      document.querySelector('.navbar').style="direction:rtl !important";
+     
+     
+      document.querySelector('form.row.from').style="text-align:right !important";
+     
+      document.querySelector('#head').innerText='سوبر بيبى';
+      document.querySelector('.whoareuu').innerText='من نحن';
+      document.querySelector('.home').innerText='الصفحه الرئيسيه';
+      document.querySelector('.contactus').innerText='تواصل معانا';
+      document.querySelector('.welcome').innerText='مرحبا بك';
+      document.querySelector('#eml').innerText='الايميل';
+      document.querySelector('#password').innerText='كلمه المرور';
+      document.querySelector('.remebr').innerText='تذكرنى';
+      document.querySelector('.lgnfb').innerText='يمكنك التسجيل من خلال الفيس بوك';
+      document.querySelector('.lgng').innerText='يمكنك التسجيل من خلال الجميل';
+      document.querySelector('.lgn').innerText='تسجيل الدخول';
+      document.querySelector('.modal-title').innerText='سوبر بيبى'
+      document.querySelector('.modalp').innerText='أهلًا بك إلى المنصّة الأولى والأكثر متعة لتعلّم اللغة العربية ، قصص متدرّجة بالصعوبة، فيديوهات دروس كرتونيّة ممتعة، تمارين تفاعلية، أوراق عمل، وألعاب تعليمية ممتعة. '
+      
+      
+      
+    }else if(lang=='en'){
+      document.querySelector('.navbar').style="direction:ltr !important";
+      document.querySelector("#navbarSupportedContent").style='margin-left:30% !important';
+      document.querySelector('form.row.from').style="textAlign:left !important";
+     
+     document.querySelector('#head').innerText='Super Baby';
+     document.querySelector('.whoareuu').innerText='Who Are Us';
+     document.querySelector('.home').innerText='Home';
+     document.querySelector('.contactus').innerText='contact Us';
+     document.querySelector('.welcome').innerText='Welcome';
+     document.querySelector('#eml').innerText='Email';
+     document.querySelector('#password').innerText='Password';
+     document.querySelector('.remebr').innerText='Remeber me';
+     document.querySelector('.lgnfb').innerText='login using facebook account';
+     document.querySelector('.lgng').innerText='Login using gamil account';
+     document.querySelector('.lgn').innerText='Login';
+     document.querySelector('.modal-title').innerText='Super Baby'
+     document.querySelector('.modal-header').style='flex-direction:row-reverse'
+     document.querySelector('.modalp').innerText='Welcome to the first and most fun platform to learn the Arabic language, stories with graduated difficulty, fun cartoon video lessons, interactive exercises, worksheets, and fun educational games.'
+     
+     
+    }else{
+      alert('select correct language');
+    }
+    
+    })
+   </script>
+    </body>
+
+</html>

@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="new(V&S)style.css">
+<title>مشاهدة الفيديوهات والاغانى</title>
+<style>
+   .navbar-brand {
+             padding-top: unset;
+        
+            }
+            #navbarSupportedContent {
+                padding-top: unset;
+                
+            }
+            .navbar {
+       
+       align-items:center;
+       padding: unset;
+       }
+       #loader{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin: 30px;
+        border: 5px solid transparent;
+        border-left:5px solid #c76574;
+        animation: spinner 1s linear infinite;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+}
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.afterloader{
+  display:none;
+}
+</style>
+</head>
+<body>
+<div id="loader"></div>
+<div class="afterloader">
+<header class="">
+  
+  <div class="row navv">
+   
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <a class="navbar-brand" href="../index.html" style="font-size:40px;font-weight: bolder;"><span ><img src="imgs/iconc.png" width="80"><span class="logohed">سوبر بيبى</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon outline-none">
+                    <i class="fas fa-align-justify"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse whoareu mr-auto" id="navbarSupportedContent" style="margin-left:unset;">
+                <ul class="navbar-nav  mr-auto">
+                 <!-- <li class="nav-item">
+                    <a class="nav-link ml-3 contactus" href="../index.html">الصفحه الرئيسيه</a>
+                   </li>-->
+                   <!-- <li class="nav-item ">
+                      Button trigger modal -->
+                       <!-- <a class="nav-link ml-3 whoareuu"  data-toggle="modal" data-target="#exampleModal">من نحن</a>
+                    </li>-->
+
+                    <!--<li class="nav-item">
+                        <a class="nav-link ml-3 contactus c" href="../contact.html">تواصل معانا</a>
+                    </li>-->
+                </ul>
+                </div>
+</nav>
+
+     
+    </div>
+   <div class="" id="backcover">
+    <br><br><br>
+     
+    <br><h1 class="ml2" id="animtxt"> إستمتع بمشاهدة الفيديوهات والأغانى الترفيهية</h1><br>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  </div>
+   
+</header>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- <div class="spinner">
+    <div class="double-bounce1"></div>
+    <div class="double-bounce2"></div>
+  </div> -->
+ 
+<div class="container">
+   
+  <!-- first row -->
+  <div class="container-fluid" id="innercontainer">
+      <div class="row m-lg-5 mt-1 p-6 p-md-5 text-center ">
+        <nav>
+          <ul class="tabs">
+            <li class="active"><a id="showall" href=" ">الكل</a></li>
+            <li><a id="showwrite" href="">الفيديوهات</a></li>
+            <li><a id="showread" href="">الأغانـى</a></li>    
+          </ul>
+        </nav>
+        <!-- width:400px;height: 300px; -->
+    <div class="col-sm-12 col-md-6 col-lg-4 ml-10 content" id="R1" style="width:340px;height: 240px; border-radius: 7%;" >
+     <div class="class-icon">
+ف
+          </div>
+        <a href="" data-toggle="modal" data-target="#myModal1">
+                <a href="" data-toggle="modal" data-target="#myModal1">
+               <img   id="i1" src="imgs/11.JPG" alt=""  style="width: 100%;height: 80%; border-radius: 7% ;"> 
+               <video id="v1" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="gif/أغنية بداية سابق ولاحق - سبيستون 🎵 Spacetoon.mp4">
+
+                Your browser does not support the video tag.
+          </video>
+           <h4 class="sabk"> كارتون سابق ولاحق </h4>
+          </a>
+          
+        </div>
+   
+  
+  <div class=" col-sm-12 col-md-6 col-lg-4 content  " id="W1"  style="width:340px;height: 240px; border-radius: 7%;">
+    <div class="class-icon">
+      ف
+                </div>
+ 
+    <a href="" data-toggle="modal" data-target="#myModal2">
+       <img   id="i2" src="imgs/16.JPG" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;"> 
+      
+       <video id="v2" style="width: 100%;height: 80%;border-radius: 7% ;display: none;" src="gif/فيلم كرتون فندق ترانسيلفانيا الوحوش  افلام كرتون ديزني كرتون افضل كارتون رائع جدا لا تفوتة (1).mp4" > 
+
+              Your browser does not support the video tag.
+        </video>
+        
+      <h4 class="hero">الأبطال الخارقين</h4>
+  </a>
+ 
+</div>
+  
+
+ <div class=" col-sm-12 col-md-6 col-lg-4 content " id="R2" style="width:340px;height: 240px; border-radius: 7%;">
+  <div class="class-icon">
+    غ
+               </div>
+     
+        <a href="" data-toggle="modal" data-target="#myModal3">
+          <img id="i3" src="imgs/5.JPG" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;"> 
+          <video id="v3" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="gif/أنا الفرخة واحنا الكتاكيت + يا أصحابي وصحباتي - كتاكيت بيبي 2018 (1) (1).mp4"  autoplay loop muted>
+
+            Your browser does not support the video tag.
+      </video>
+          <h4 class="hens">أنا الفرخة واحنا الكتاكيت </h4>   
+        </a>
+        
+    </div>
+   
+   <!-- second row -->
+    
+ 
+    <div class="col-sm-12 col-md-6 col-lg-4 content" id="R3" style="width:340px;height: 240px; border-radius: 7%;" >
+     <div class="class-icon">
+ف
+          </div>
+       
+          <a href="" data-toggle="modal" data-target="#myModal4">
+            <img id="i4" src="imgs/12.JPG" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;">
+            <video id="v4" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="gif/بكار جـ1- تتر البداية .. محمد منير.mp4"  autoplay loop muted>
+
+              Your browser does not support the video tag.
+        </video>
+            <h4 class="bakar"> كارتون بكار </h4>
+          </a>
+          
+        </div>
+  
+        <div class="col-sm-12 col-md-6 col-lg-4 content" id="W2" style="width:340px;height: 240px; border-radius: 7%;" >
+          <div class="class-icon">
+     غ
+               </div>
+             <a href="" data-toggle="modal" data-target="#myModal5">
+                     <a href="" data-toggle="modal" data-target="#myModal5">
+                    <img   id="i5" src="imgs/6.JPG" alt=""  style="width: 100%;height: 80%; border-radius: 7% ;">
+                    <video id="v5" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="gif/أغنية ذهب الليل طلع الفجر بدون ايقاع - قناة كيوي - Kiwi Tv.mp4"  autoplay loop muted>
+ 
+                     Your browser does not support the video tag.
+               </video>
+                <h4 class="night"> ذهب الليل وطلع الفجر </h4>
+               </a>
+               
+             </div>
+ <div class=" col-sm-12 col-md-6 col-lg-4 content" id="W3" style="width:340px;height: 240px; border-radius: 7%;">
+  <div class="class-icon">
+    غ
+               </div>
+      
+        <a href="" data-toggle="modal" data-target="#myModal6">
+          <img id="i6" src="imgs/3.jpg" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;">
+          <video id="v6" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="gif/أغنية بابا جاي إمتى بدون إيقاع  - قناة مرح كي جي - Marah KG.mp4"  autoplay loop muted>
+
+            Your browser does not support the video tag.
+      </video>
+          <h4 class="father"> بابا جاى امتا</h4></a>
+        
+    </div>
+   
+  <!-- third row -->
+
+   
+    
+   
+      <div class="col-sm-12 col-md-6 col-lg-4 content" id="R4" style="width:340px;height: 240px; border-radius: 7%;" >
+       <div class="class-icon">
+  ف
+            </div>
+            <a href="alphabets.html">
+              <img id="i7" src="imgs/14.JPG" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;">
+              <video id="v7" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="gif/SpongeBob SquarePants - Nickelodeon Arabia - دروس الكبار - سبونج بوب.mp4"  autoplay loop muted>
+
+                Your browser does not support the video tag.
+          </video>
+              <h4 class="spong"> سبونج بوب</h4>
+            </a>
+          </div>
+    
+    
+    <div class=" col-sm-12 col-md-6 col-lg-4  content" id="W4"  style="width:340px;height: 240px; border-radius: 7%;">
+      <div class="class-icon">
+        غ
+                  </div>
+  
+      <a href="writingteach.html">
+        <img   id="I8" src="imgs/1.jpg" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;"> 
+        <video id="v8" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="vids/هالصيصان شو حلوين - النسخة الأصلية.mp4"  autoplay loop muted>
+
+          Your browser does not support the video tag.
+    </video>
+        <h4 class="funchild">الطفل المرح </h4>
+    </a>
+   
+  </div>
+  
+  
+   <div class=" col-sm-12 col-md-6 col-lg-4 content" id="R5" style="width:340px;height: 240px; border-radius: 7%;">
+    <div class="class-icon">
+      ف
+                 </div>
+        
+            <a href="animalbook.html">
+            <img   id="I3" src="imgs/15.JPG" alt=""  style="width: 100%; height: 80%; border-radius: 7% ;">
+            
+        <h4 class="ambol"> عالم غامبول المدهش </h4>
+           </a>
+          
+      </div>
+     
+     <!-- fourth row -->
+    
+      <!-- first col -->
+     
+        <div class="col-sm-12 col-md-6 col-lg-4 content" id="W5" style="width:340px;height: 240px; border-radius: 7%;" >
+         <div class="class-icon">
+    ف
+              </div>
+            <a href="myfamily.html">
+                    <a href="myfamily.html">
+                   <img   id="I1" src="imgs/13.JPG" alt=""  style="width: 100%;height: 80%; border-radius: 7% ;">
+                   <video id="v8" style="width: 100%;height: 80%;border-radius: 7% ;display: none;"  src="vids/أنا الفرخة واحنا الكتاكيت + يا أصحابي وصحباتي - كتاكيت بيبي 2018.mp4"  autoplay loop muted>
+
+                    Your browser does not support the video tag.
+              </video>
+               <h4 class="tom"> توم وجيرى </h4>
+              </a>
+              
+            </div>
+      <!-- second col -->
+      
+      <div class=" col-sm-12 col-md-6 col-lg-4 content" id="R6"  style="width:340px;height: 240px; border-radius: 7%;">
+        <div class="class-icon">
+          غ
+                    </div>
+    <!-- <div class="second-write" id="write2"> -->
+        <a href="writingteach.html">
+          <img   id="I8" src="imgs/7.JPG" alt=""  style="width: 100%;height: 80%;border-radius: 7% ;"> 
+          <h4 class="then">هاليصيصان شو حلوين </h4>
+      </a>
+     
+    </div>
+      <!-- third col -->
+    
+     <div class=" col-sm-12 col-md-6 col-lg-4 content" id="W6" style="width:340px;height: 240px; border-radius: 7%;">
+      <div class="class-icon">
+        ف
+                   </div>
+          <!-- <div class="first-write" id="write1"> -->
+              <a href="animalbook.html">
+              <img   id="I3" src="imgs/أبطال_الكرة.jpg" alt=""  style="width: 100%; height: 80%; border-radius: 7% ;"> 
+          <h4 class="ball"> أبطال الكرة </h4>
+             </a>
+            
+            </div> 
+       </div> 
+</div>
+</div>
+ 
+<div class="container">
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+  
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+       
+        <div class="modal-body" style="width: 500px; height: 500px;">
+          <div>
+              <video   controls  class="vid1" >
+                <source src="vids/أغنية بداية سابق ولاحق - سبيستون 🎵 Spacetoon.mp4" type="video/mp4" size="500" />
+              </video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+            
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+  
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+       
+        <div class="modal-body" style="width: 500px; height: 500px;">
+          <div>
+              <video   controls  class="vid2" >
+                <source src="vids/فيلم كرتون فندق ترانسيلفانيا الوحوش  افلام كرتون ديزني كرتون افضل كارتون رائع جدا لا تفوتة.mp4" type="video/mp4" size="500" />
+              </video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+            
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+  
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+       
+        <div class="modal-body" style="width: 500px; height: 500px;">
+          <div>
+              <video   controls  class="vid1" >
+                <source src="vids/أنا الفرخة واحنا الكتاكيت + يا أصحابي وصحباتي - كتاكيت بيبي 2018.mp4" type="video/mp4" size="500" />
+              </video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+            
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+  
+  <div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+       
+        <div class="modal-body" style="width: 500px; height: 500px;">
+          <div>
+              <video   controls  class="vid1" >
+                <source src="vids/بكار جـ1- تتر البداية .. محمد منير.mp4" type="video/mp4" size="500" />
+              </video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+            
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+  
+  <div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+       
+        <div class="modal-body" style="width: 500px; height: 500px;">
+          <div>
+              <video   controls  class="vid1" >
+                <source src="vids/أغنية ذهب الليل طلع الفجر بدون ايقاع - قناة كيوي - Kiwi Tv.mp4" type="video/mp4" size="500" />
+              </video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+            
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+  
+  <div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+       
+        <div class="modal-body" style="width: 500px; height: 500px;">
+          <div>
+              <video   controls  class="vid1" >
+                <source src="vids/أغنية بابا جاي إمتى بدون إيقاع  - قناة مرح كي جي - Marah KG.mp4" type="video/mp4" size="500" />
+              </video>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+            
+            </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/CDNSFree/Plyr/plyr.css" />
+ 
+<script>
+  var controls =
+[
+    'play-large',  
+    'play',  
+    'fast-forward', 
+    'progress',  
+    'current-time',  
+    'duration', 
+    'mute',  
+    'volume', 
+    'captions',  
+    'settings', 
+    'pip',  
+    'airplay',  
+    'download',  
+    'fullscreen'  
+];
+
+  const player = new Plyr('.vid1',{controls});
+
+  player.style.width="100px";
+
+</script>
+
+
+<style>
+  :root {
+      
+  --plyr-color-main: #e657ff;
+    --plyr-video-control-color  :#ffffff;
+}
+
+</style>
+<script src="script(V&S).js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script>
+   //to change direction when change language
+   window.addEventListener('load',function(){
+      
+      var lang=localStorage.getItem('lang');
+      //debugger;
+    if(lang=='ar'){
+      document.querySelector('.row.navv').style='direction:rtl';
+      document.querySelector('.logohed').innerText='سوبر بيبى';
+      document.querySelector('.contactus').innerText='الصفحه الرئيسيه';
+      document.querySelector('.whoareuu').innerText='من نحن';
+      document.querySelector('.c').innerText='تواصل معانا';
+      document.querySelector('.ml2').innerText='إستمتع بمشاهدة الفيديوهات والأغانى الترفيهية'
+      document.querySelector('#showall').innerText='الكلl';
+      document.querySelector('#showwrite').innerText='الفيديوهات';
+      document.querySelector('#showread').innerText='الاغانى';
+      document.querySelector('.sabk').innerText='سابق ولاحق';
+      document.querySelector('.hero').innerText='الابطال الخارقين';
+      document.querySelector('.hens').innerText='احنا الكتاكيت';
+      document.querySelector('.bakar').innerText='بكار';
+      document.querySelector('.night').innerText='ذهب الليل';
+      document.querySelector('.father').innerText='باباجاى امتى';
+      document.querySelector('.spong').innerText='سبونج بوب';
+      document.querySelector('.funchild').innerText='الاطفال المرحين';
+      document.querySelector('.ambol').innerText='غامبول';
+
+      document.querySelector('.tom').innerText='توم وجيرى';
+      document.querySelector('.then').innerText='احنا الكتاكيت';
+      document.querySelector('.ball').innerText='الكره'
+      
+       //document.querySelector('.reservedrights').innerText='حقوق الملكيه محفوظه iti@2021'
+      // document.querySelector('.modal-title').innerText='سوبر بيبى'
+      // document.querySelector('.modalp').innerText='أهلًا بك إلى المنصّة الأولى والأكثر متعة لتعلّم اللغة العربية ، قصص متدرّجة بالصعوبة، فيديوهات دروس كرتونيّة ممتعة، تمارين تفاعلية، أوراق عمل، وألعاب تعليمية ممتعة. '
+       
+      
+    }else if(lang=='en'){
+      document.querySelector('.row.navv').style='direction:ltr';
+      document.querySelector('.logohed').innerText='Super Baby';
+     
+      document.querySelector('.ml2').innerText='have fun listening songs'
+      document.querySelector('#showall').innerText='all';
+      document.querySelector('#showwrite').innerText='videos';
+      document.querySelector('#showread').innerText='songs';
+      document.querySelector('.sabk').innerText='sabk wa la7k';
+      document.querySelector('.hero').innerText='super hero';
+      document.querySelector('.hens').innerText='hens';
+      document.querySelector('.bakar').innerText='bakar';
+      document.querySelector('.night').innerText='night go';
+      document.querySelector('.father').innerText='father come';
+      document.querySelector('.spong').innerText='song pop';
+      document.querySelector('.funchild').innerText='fun children';
+      document.querySelector('.ambol').innerText='8ambool';
+
+      document.querySelector('.tom').innerText='tom and jerry';
+      document.querySelector('.then').innerText='this hen';
+      document.querySelector('.ball').innerText='ball hero'
+     
+    }else if(localStorage.getItem("lang")=="en"){
+      document.querySelector('.row.navv').style='direction:ltr';
+      
+      document.querySelector('.ml2').innerText='have fun listening songs'
+      document.querySelector('#showall').innerText='all';
+      document.querySelector('#showwrite').innerText='videos';
+      document.querySelector('#showread').innerText='songs';
+      document.querySelector('.sabk').innerText='sabk wa la7k';
+      document.querySelector('.hero').innerText='super hero';
+      document.querySelector('.hens').innerText='hens';
+      document.querySelector('.bakar').innerText='bakar';
+      document.querySelector('.night').innerText='night go';
+      document.querySelector('.father').innerText='father come';
+      document.querySelector('.spong').innerText='song pop';
+      document.querySelector('.funchild').innerText='fun children';
+      document.querySelector('.ambol').innerText='8ambool';
+
+      document.querySelector('.tom').innerText='tom and jerry';
+      document.querySelector('.then').innerText='this hen';
+      document.querySelector('.ball').innerText='ball hero';
+
+        //document.querySelector('.modal-title').innerText='Super Baby'
+        //document.querySelector('.modal-header').style='align-items: baseline;'
+        //document.querySelector('.modalp').innerText='Welcome to the first and most fun platform to learn the Arabic language, stories with graduated difficulty, fun cartoon video lessons, interactive exercises, worksheets, and fun educational games.'
+       
+     
+    
+
+    }
+    else{
+      alert('select correct language');
+    }
+    
+    var fun=setTimeout(function(){
+     document.querySelector(".afterloader").style="display:block";
+     document.querySelector("#loader").style="display:none";
+    },500)
+    })
+    fun();
+    
+</script>
+</div>
+</body>
+</html>
+ 
+

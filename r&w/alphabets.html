@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="videos/test.css">
+
+<title>Title</title>
+
+<style>
+   
+    body
+    {
+        background-image: linear-gradient(to left, rgba(61, 58, 58, 0), rgba(83, 79, 79, 0.568)), linear-gradient(to right, rgba(255,0,0,0), rgba(82, 78, 78, 0.637)), url("imgs/abcimg.jpg");
+ background-color: linear gra;
+
+    } .bg-image{
+         /* The image used */
+  background-image: url("imgs/numbers.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        /* background: url(imgs/numbers.jpg) ;
+        background-size: cover;
+        filter: blur(8px); */
+       
+       
+    
+    * {
+  box-sizing: border-box;
+}
+    .bg-image {
+  /* The image used */
+  background-image: url("imgs/numbers.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    .containa{
+        /* background-color: darkred; */
+        text-align: center;
+        justify-content: center;
+        /* width: 800px;
+        height: 300px; */
+        position: relative;
+        margin: 100px 280px ;
+        
+    
+    }
+    
+  :root {
+      /* --plyr-height:300px; */
+  --plyr-color-main: #e657ff;
+    --plyr-video-control-color  :#fafafa;
+}
+
+ 
+</style>
+</head>
+<body>
+    <div class="bg-image"></div>
+ <div class="containa">
+
+  <video controls class="vid1">
+    <source src="videos/تعليم الاطفال الحروف العربية المستوى الاول.mp4" type="video/mp4"/>
+  </video>
+</div>
+
+<script src="videos/videoplayed.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script> -->
+
+<script>
+  var controls =
+[
+    'play-large',  
+    'play',  
+    'fast-forward', 
+    'progress',  
+    'current-time',  
+    'duration', 
+    'mute',  
+    'volume', 
+    'captions',  
+    'settings', 
+    'pip',  
+    'airplay',  
+    'download',  
+    'fullscreen'  
+];
+
+  const player = new Plyr('.vid1',{controls});
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="#">
+   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory Game</title>
+    <style>
+      #main,#btns{
+    width:480px;
+    margin:0 auto;
+    border-radius:10px;
+    background:#eee;
+    overflow:hidden;
+}
+div{
+    float:left;
+    background:url(resources/Moon.gif);
+    margin:5px;
+    cursor:pointer;
+    height:99px;
+    width:99px;
+}
+img{
+    opacity:0;
+}
+body{
+    background:pink;
+}
+#btns button{
+    width:120px;
+    color:white;
+    background:#e10f34;;
+    margin-top: 20px;
+    cursor: pointer;
+    border:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;color:#e10f34;;">memory game</h1>
+    <section id="main">
+        
+        
+    </section>
+    <section id="btns" style="display:flex;justify-content:space-evenly;background:pink;">
+        <button id="play" onclick="reloadImg()">play</button>
+        <button onclick="close()" >close</button>
+    </section>
+   
+    <script src="memoryGame.js"></script>
+</body>
+</html>

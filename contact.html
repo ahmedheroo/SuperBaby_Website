@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type = "image/png" sizes="150x150">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/contactmedia.css">
+    <title class="title">contact us</title>
+</head>
+<body onload="clear()">
+    <div id="container">
+        <div id="header">
+           <h1 class="head">Supper Baby</h1>
+           <span style="clear:both"></span>
+            <button class="login" onclick="window.location='index.html'">go to home page</button>
+            
+        </div>
+        <!--section-->
+        <div id="contact" style="margin-bottom:40px;">
+           <div id="contact-div1" style="background-image:url('images/contactus.jpg');">
+               
+           </div>
+           <div>
+               <h1 class="logohead">contact us</h1>
+           </div>
+        </div>
+        <div id="cnt-form">
+        <h1 class="head-frm">you can contact us as follow:</h1>
+        <form name="contactForm" action="#cnt-form" method="Get" style="padding-right:20%;padding-left:20%;">
+            <div>
+                <label for="fName"class='first'>First Name</label><br><br>
+                <input type="text" id="fName" name="fname" onchange="hide(fnameErr)">
+                <div class="error" id="fnameErr"></div>
+            </div>
+            <div>
+                <label for="lName" class="lname">Last Name</label><br><br>
+                <input type="text" id="lName" name="lName" onchange="hide(lnameErr)">
+                <div class="error" id="lnameErr"></div>
+            </div><br>
+            <div>
+                <label for="email" class="email">Email</label><br><br>
+                <input type="text" id="email" name="email" onchange="hide(emailErr)">
+                <div class="error" id="emailErr"></div>
+            </div>
+            <div>
+                <label for="phone" class="phone">phone number</label><br><br>
+                <input type="text" id="phone" name="phone" onchange="hide(mobileErr)">
+                <div class="error" id="mobileErr"></div>
+            </div><br>
+            
+             <div>
+                <label for="schoolName" class="schoolName">School Name</label><br>
+                <input type="text" id="schoolName" name="schoolName" onchange="hide(snameErr)">
+                <div class="error" id="snameErr"></div>
+            </div>
+            <div>
+                <label for="job" class="job">job Description</label><br><br>
+                <input type="text" id="job" name="job" onchange="hide(jnameErr)">
+                <div class="error" id="jnameErr"></div>
+            </div><br>
+            <h1 id="cnt-us"></h1>
+            <div style="margin-right:20%;" >
+                <input type="submit" class='sbt' value="Submit" onclick="return validateForm()">
+            </div>
+        </form>
+        </div>
+   
+    
+<script src="js/contact.js"></script>
+
+<!--language translation-->
+<script>
+     
+    window.addEventListener('load',function(){
+      
+      var lang=localStorage.getItem('lang');
+    
+    if(lang=='ar'){
+
+       document.forms[0].style.direction="rtl";
+       //document.querySelector('#contact-div1').style='float:left !important'
+    
+      document.querySelector('.title').innerText='للتواصل معانا';
+      document.querySelector('.head').innerText='سوبر بيبى';
+      document.querySelector('.head-frm').innerText='يمكنك التواصل معانا ';
+      document.querySelector('.first').innerText='الاسم الاول';
+      document.querySelector('.lname').innerText='الاسم الاخير';
+      document.querySelector('.email').innerText='البريد الالكترونى';
+      document.querySelector('.phone').innerText='رقم الهاتف';
+      document.querySelector('.schoolName').innerText='اسم المدرسه';
+      document.querySelector('.job').innerText='وصف';
+      document.querySelector('.sbt').value='تسجيل ';
+      document.querySelector('.logohead').innerText='تواصل معانا';
+      document.getElementsByTagName('button')[0].innerText='الصفحه الرئيسيه'
+     
+     
+       
+    }else if(lang=='en'){
+        document.forms[0].style.direction="ltr";
+        
+        document.querySelector('.title').innerText='to contact us';
+      document.querySelector('.head').innerText='super baby';
+      document.querySelector('.head-frm').innerText='contact us ';
+      document.querySelector('.first').innerText='First Name'
+      document.querySelector('.lname').innerText='Last Name'
+      document.querySelector('.email').innerText='Email'
+      document.querySelector('.phone').innerText='phone number'
+      document.querySelector('.schoolName').innerText='Scholl name'
+      document.querySelector('.job').innerText='Description'
+      document.querySelector('.sbt').value='Register '
+      document.querySelector('.logohead').innerText='Contact us'
+      document.getElementsByTagName('button')[0].innerText='go home '
+      
+    }else{
+      alert('select correct language');
+    }
+    
+    })
+   
+</script>
+</body>
+</html>

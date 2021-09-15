@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Super Baby</title>
+    <!--logo beside title in title bar-->
+    <link rel="icon" href="images/titlelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.5.3/css/bootstrap.min.css" integrity="sha384-JvExCACAZcHNJEc7156QaHXTnQL3hQBixvj5RV5buE7vgnNEzzskDtx9NQ4p6BJe" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap" rel="stylesheet">
+    
+    <!--style.css-->
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+
+<body>
+<div id="container">
+    
+<!--start header-->
+ <div class="header">
+ <!--*********************************************modal***************************************************-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="text-center">
+      <img src="images/cov22.png" style="height:50%;">
+    </div>
+    <div class="modal-content">
+      
+      <div class="modal-header text-center bg-danger text-light">
+      
+        <h5 class="modal-title  lang exampleModalLabel" id="exampleModalLabel"  style="padding-top:30px;">سوبر بييبى</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" class="text-light">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <P class="lead lang hometextbanner modalp" id="hometextbanner">
+          أهلًا بك إلى المنصّة الأولى والأكثر متعة لتعلّم اللغة العربية
+          ، قصص متدرّجة بالصعوبة، فيديوهات دروس كرتونيّة ممتعة، تمارين تفاعلية، أوراق عمل، وألعاب تعليمية ممتعة.
+      </P>
+      </div>
+      
+    </div>
+  </div>
+</div>
+            <!--*************start navbar*********************-->
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand"   href="#" style="font-size:40px;font-weight: bolder;"><img src="images/icon1-removebg-preview (1).png" width="80"><span class="lang logo" >سوبر بيبى</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon outline-none">
+                        <i class="fas fa-align-justify"></i>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse whoareu mr-auto" id="navbarSupportedContent">
+                    <ul class="navbar-nav  ml-auto" style="margin-left:auto !important;">
+                      <li class="nav-item">
+                        <a class="nav-link ml-3 contactus lang mainpage" href="index.html">الصفحه الرئيسيه</a>
+                       </li>
+                        <li class="nav-item ">
+                         <!-- Button trigger modal -->
+                            <a  class="nav-link ml-3 whoareuu lang whoareu"  data-toggle="modal" data-target="#exampleModal">من نحن</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link ml-3 contactussu lang contact c" href="contact.html">تواصل معانا</a>
+                        </li>
+                    </ul>
+                    <!--select for language-->
+                    <select class="custom-select" style="width:20%;" id="menu">
+                      <option selected id="ar">من فضلك حدد اللغه</option>
+                      <option value="1" id="ar" class="translate">Arabic</option>
+                      <option value="2" id="en" class="translate">English</option>
+                      
+                    </select>
+                    
+                   
+                    
+                </div>
+            </nav>
+
+            <!--********************************** start banner**************************************-->
+            <div class="banner" style="overflow:hidden;padding: .5rem 1rem;">
+                <div class="container">
+                    <div class="row banner-direction" style="overflow:hidden;justify-content: space-between;">
+                        <!--banner image-->
+                        <div id="banner-img col-sm-12 col-md-6" style="border-radius:50%;background:rgb(56 136 144 / 11%);">
+                            <img src="images/icon1-removebg-preview (1).png">
+                        </div>
+                        <!--banner text-->
+                        <div   class="align-self-center col">
+                            <h1 class="lang hbanner" key="">مرحبا بك فى سوبر بيبى</h1>
+                            <P class="lead  lang home" >
+                                أهلًا بك إلى المنصّة الأولى والأكثر متعة لتعلّم اللغة العربية
+                                ، قصص متدرّجة بالصعوبة، فيديوهات دروس كرتونيّة ممتعة، تمارين تفاعلية، أوراق عمل، وألعاب تعليمية ممتعة.
+                            </P>
+                            <div class="btn_group row" style="flex-direction:column;">
+                                <a id="active" href="#ourwebsitecontent" class="col-md-12 col-lg-6 lang startjourney" >ابدا التصفح</a><br>
+
+                                <a href="login.html" id="login" class="btn login  my-sm-0 col-md-12 col-lg-6 lang login" key="" >&nbsp;&nbsp;&nbsp;&nbsp;سجل الدخول&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end banner-->
+        </div><!--end header-->
+        <!-----------*******************************************************--------------->
+        <!--our pages content-->
+        <div class="container-fluid" id="ourwebsitecontent">
+          <div class="row">
+            <div class="col-12 mt-4">
+              <span class="appmoving d-inline-block lang lets" id="appmoving" key="">هيا</span>
+              <span class="appmoving d-inline-block lang us" id="appmoving" key="">بينا</span>
+              <span class="appmoving  d-inline-block lang start" id="appmoving" key="">نبدا</span>
+            <span class="appmoving  d-inline-block lang journey" id="appmoving" key="">رحلتنا</span>
+            </div>
+          </div>
+        </div>
+        <div class="content-pages container" >
+            <div class="row text-center mt-4" style="justify-content: center;">
+              
+                <div class="col-sm-10 col-md-3 app">
+                    <a href="r&w/Reading & Writing.html">
+                    <div class=" read" style="background-color:#58ae02; border:1px solid #58ae02;">
+                       
+                            <i class="fas fa-book-open" style="color:white;font-size:48px;"></i>
+                        
+                    </div>
+                </a>
+                    <p style="font-weight: bolder;" class="lang readd" key="">اقرا</p>
+                </div>
+                <div class=" col-sm-10 col-md-3 app">
+                    <a href="v&s/New videos&songs.html">
+                    <div class=" youtube" style="background-color:#ff8700;">
+                       
+                            <i class="fab fa-youtube" style="color:white;font-size:48px;"></i>
+                        
+                    </div>
+                </a>
+                    <p style="font-weight: bolder;" class="lang watch" key="">شاهد</p>
+                </div>
+                <div class="col-sm-10 col-md-3 app">
+                    <a href="draw/test2.html">
+                    <div class=" draw" style="background-color:#fe5639;">
+                       
+                            <i class="fas fa-palette" style="color:white;font-size:48px;"></i>
+                       
+                    </div>
+                </a>
+                    <p style="font-weight: bolder;" class="lang draww" key="">ارسم</p>
+                </div>
+                <div class="col-sm-10 col-md-3 app">
+                    <a href="game page/games.html">
+                    <div class="game" style="background-color:#a550ee;">
+                        
+                            <i class="fas fa-gamepad" style="color:white;font-size:48px;"></i>
+                        
+                    </div>
+                    </a>
+                    <p style="font-weight: bolder;" class="lang play" key="">العب</p>
+                </div>
+            </div>
+        </div>
+
+        <!---------------****************what we offer and introduce carsoul***********************------->
+        <!--read-->
+        <div id="carouselExampleIndicators" class="carousel slide ">
+          <div class="container-fluid my-4">
+          <div class="row">
+            <div class="col-sm-12">
+                <h1 class="h4">
+                    <span style="color:#b63469;" class="lang readandlearn" key="">اقرا واتعلم</span>
+                    <span><i style="color:#b63469;" class="fas fa-chevron-left"></i></span>
+                    <a href="r&w/Reading & Writing.html" style="text-decoration:none;color:rgba(128, 128, 128, 0.774) !important;" class="lang readpage" key="">
+                        صفحه القراءه
+                    </a>
+                </h1>
+            </div>
+          </div>
+        </div>
+            <div class="carousel-inner text-center">
+
+              
+             <!--------------start first carsoul item----------------------->
+                <div class="carousel-item active">
+
+                    <div class="row p-3" style="justify-content: center;">
+                        <div class="col-lg-3 col-md-6 col-12">
+
+
+                            <a href="r&w/Colors (2).html">
+                                <img src="images/slider reading images/w/colors.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="lang row1img1" key="">كتاب الالوان</h5>
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                            <a href="r&w/numbers.html">
+                                <img src="images/slider reading images/w/numbers.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="lang row1img2" key="">تعلم الارقام</h5>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+
+                            <a href="r&w/animalbook.html">
+                                <img src="images/slider reading images/w/animalbook w.jpeg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="lang row1img3" key="">كتاب الحيوانات</h5>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block ">
+
+                            <a href="r&w/writingteach.html">
+                                <img src="images/slider reading images/w/writnigteach.jpg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="text-center lang row1img4" key="">تعلم الحروف والقراءه</h5>
+                        </div>
+                    </div>
+                </div>
+                <!--------------end first carsoul item----------------------->
+                
+                <!----------------staart second carsoul------------------------>
+                <div class="carousel-item">
+                    <div class="row p-3" style="justify-content: center;">
+                        <div class="col-lg-3 col-md-6 col-12">
+
+
+                            <a href="r&w/readedu.html">
+                                <img src="images/slider reading images/r/readedu.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="lang row1img5" key="">تعلم القراءه</h5>
+
+
+
+                        </div>
+                        <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                            <a href="r&w/numbers.html">
+                                <img src="images/slider reading images/r/numbers.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="lang row1img6" key="">تعلم الارقام</h5>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block">
+
+                            <a href="r&w/myfamily.html">
+                                <img src="images/slider reading images/r/familyw.jpeg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="lang row1img7" key="">هذه اسرتى</h5>
+                        </div>
+                        <div class="col-lg-3 d-none d-lg-block ">
+
+                            <a href="r&w/alphabets.html">
+                                <img src="images/slider reading images/r/alphapets.jpg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                            </a>
+                            <h5 class="text-center lang row1img8" key="">تعلم الحروف</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!----------second carsoul watch and have fun****************** -->
+            <div id="carousel2" class="carousel slide ">
+                <div class="container-fluid my-4  ">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="h4">
+                                <span style="color:#b63469;"  class="lang watchandfun" key="">شاهد واستمتع</span>
+                                <span><i style="color:#b63469;" class="fas fa-chevron-left"></i></span>
+                                <a href="v&s/New videos&songs.html" style="text-decoration:none;color:rgba(128, 128, 128, 0.774) !important;" class="lang letsstart" key="">
+                                    هيا نبدا
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-inner text-center">
+                    <!--------------start first carsoul item----------------------->
+                    <div class="carousel-item active">
+
+                        <div class="row p-3" style="justify-content: center;">
+                            <div class="col-lg-3 col-md-6 col-12">
+
+
+                                <a href="vids/SpongeBob .html">
+                                    <img src="images/slidervideo&songs/songs/2.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img1" key="">سبونج بوب</h5>
+
+
+
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                                <a href="#">
+                                    <img src="images/slidervideo&songs/songs/anakatkot.JPG" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img2" key="">انا الكتكوت</h5>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block">
+
+                                <a href="#">
+                                    <img src="images/slidervideo&songs/songs/fathercoming.jpg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img3" key="">بابا جاى امتى</h5>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block ">
+
+                                <a href="#">
+                                    <img src="images/slidervideo&songs/songs/katakit.jpg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img4" key="">البيبى الصغنن</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------end first carsoul item----------------------->
+                    <!----------------staart second carsoul------------------------>
+                    <div class="carousel-item">
+                        <div class="row p-3" style="justify-content: center;">
+                            <div class="col-lg-3 col-md-6 col-12">
+
+
+                                <a href="vids/superheros.html">
+                                    <img src="images/slidervideo&songs/songs/nightgo.JPG" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img5" key="">ذهب الليل</h5>
+
+
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                                <a href="vids/chicken.html">
+                                    <img src="images/slidervideo&songs/songs/sesan.JPG" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center  lang row2img6" key="">هالصيصان شو حلوين</h5>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block">
+
+                                <a href="vids/sabek w la7ek.html">
+                                    <img src="images/slidervideo&songs/11.jpg" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img7" key="">سابق ولاحق</h5>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-block ">
+
+                                <a href="vids/bakar.html">
+                                    <img src="images/slidervideo&songs/12.JPG" class="d-block img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                </a>
+                                <h5 class="text-center lang row2img8" key="">بكار</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <!--***************************************************carsoul for draw and coloring********************************************************-->
+                <div id="carousel3" class="carousel slide ">
+                    <div class="container-fluid my-4  ">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1 class="h4">
+                                    <span style="color:#b63469;" class="lang colorandart" key="">ارسم ولون</span>
+                                    <span><i style="color:#b63469;" class="fas fa-chevron-left"></i></span>
+                                    <a href="#" style="text-decoration:none;color:rgba(128, 128, 128, 0.774) !important;" class="lang colorpage" key="">
+                                        صفحه الرسم والتلوين
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-inner text-center">
+                        <!--------------start first carsoul item----------------------->
+                        <div class="carousel-item active">
+
+                            <div class="row p-3" style="justify-content: center;">
+                                <div class="col-lg-3 col-md-6 col-12">
+
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img1" key="">هيا نرسم</h5>
+
+
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center  lang row3img2" key="">هيا نرسم</h5>
+
+                                </div>
+                                <div class="col-lg-3 d-none d-lg-block">
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img3" key="">هيا نرسم</h5>
+
+                                </div>
+                                <div class="col-lg-3 d-none d-lg-block ">
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img4" key="">هيا نرسم</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------end first carsoul item----------------------->
+                        <!----------------staart second carsoul------------------------>
+                        <div class="carousel-item">
+                            <div class="row p-3" style="justify-content: center;">
+                                <div class="col-lg-3 col-md-6 col-12">
+
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img5" key="">هيا نرسم</h5>
+
+
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img6" key="">هيا نرسم</h5>
+
+                                </div>
+                                <div class="col-lg-3 d-none d-lg-block">
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img7" key="">هيا نرسم</h5>
+
+                                </div>
+                                <div class="col-lg-3 d-none d-lg-block ">
+
+                                    <a href="#">
+                                        <img src="images/4.jpg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                    </a>
+                                    <h5 class="text-center lang row3img8" key="">هيا نرسم</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!--******************************************play carsoul********************************************************-->
+                    <div id="carousel4" class="carousel slide ">
+                        <div class="container-fluid my-4  ">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1 class="h4">
+                                        <span style="color:#b63469;" class="lang playandhavefun" key="">العب واستمتع</span>
+                                        <span><i style="color:#b63469;" class="fas fa-chevron-left"></i></span>
+                                        <a href="#" style="text-decoration:none;color:rgba(128, 128, 128, 0.774) !important;" class="lang pagePlay" key="">
+                                            هيا نلعب
+                                        </a>
+                                    </h1>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-inner text-center">
+                            <!--------------start first carsoul item----------------------->
+                            <div class="carousel-item active">
+
+                                <div class="row p-3" style="justify-content: center;">
+                                    <div class="col-lg-3 col-md-6 col-12">
+
+
+                                        <a href="#">
+                                            <img src="game page/image/numberpuzzle.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img1" key="">هيا نرسم</h5>
+
+
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                                        <a href="#">
+                                            <img src="game page/image/memoryGames.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img2" key="">هيا نرسم</h5>
+
+                                    </div>
+                                    <div class="col-lg-3 d-none d-lg-block">
+
+                                        <a href="#">
+                                            <img src="game page/image/numberpuzzle.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img3" key="">هيا نرسم</h5>
+
+                                    </div>
+                                    <div class="col-lg-3 d-none d-lg-block ">
+
+                                        <a href="#">
+                                            <img src="game page/image/memoryGames.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img4" key="">هيا نرسم</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------end first carsoul item----------------------->
+                            <!----------------staart second carsoul------------------------>
+                            <div class="carousel-item">
+                                <div class="row p-3" style="justify-content: center;">
+                                    <div class="col-lg-3 col-md-6 col-12">
+
+
+                                        <a href="#">
+                                            <img src="game page/image/numberpuzzle.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img5" key="">هيا نرسم</h5>
+
+
+
+                                    </div>
+                                    <div class="col-lg-3 col-md-6 d-none d-lg-block d-md-block">
+
+                                        <a href="#">
+                                            <img src="game page/image/math.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img6" key="">هيا نرسم</h5>
+
+                                    </div>
+                                    <div class="col-lg-3 d-none d-lg-block">
+
+                                        <a href="#">
+                                            <img src="game page/image/imgagepuzzle.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img7" key="">هيا نرسم</h5>
+
+                                    </div>
+                                    <div class="col-lg-3 d-none d-lg-block ">
+
+                                        <a href="#">
+                                            <img src="game page/image/fallingball.jpeg" class="d-block  img-thumbnail" alt="..." style="height:270px;width:100%;">
+                                        </a>
+                                        <h5 class="text-center lang row4img8" key="">هيا نرسم</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next" style="width:50px;height:50px;top:40%;border-radius:50%;background-color:maroon;">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!--*************************************footer*************************************************-->
+                        <footer style="color:white;padding:30px;background-color:#000000bd;">
+                            <div class="container">
+                                <div id="social" class="row text-md-center justify-content-md-between">
+                                    <div class="col col-md-4 my-4 mx-sm-auto">
+                                        <h1 class="h5 lang usedas" key="">انا استخدم الموقع ك</h1>
+                                        <select id="list-students_ages">
+                                            <option value="1">طالب عمرى اقل من 13 عاما</option>
+                                            <option value="2">طالب عمرى اكثر من 13 عاما</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="col col-md-4 my-4 mx-sm-auto">
+                                        <h1 class="h5 lang contactusf" key="">للتواصل معنا</h1>
+                                        <p class="lang whatsapp" key="">واتساب:0122345678</p>
+                                        <p class="lang Gmail" key="">بريد الكترونى:ititeamwork@gmail.com</p>
+                                    </div>
+
+
+                                </div>
+                                <!--second row-->
+                                <div class="row  text-center">
+                                    <div class="col-sm-12 col-md-4 mx-auto" style="border-bottom:1px solid white;">
+                                        <div class="">
+                                           <a href="#"><i class="fab fa-facebook" style="font-size:30px;"></i></a> 
+                                            <a href="#"><i class="far fa-envelope-open" style="font-size:30px;"></i></a>
+                                        </div>
+                                        <p class="lang reservedrightts" key="">حقوق الملكيه الفكريه محفوظهititeamwork&copy;2021</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </footer>
+                        <button id="up" style="background-color:#6d616173;"><i class="fas fa-arrow-up"></i></button>
+                    
+                </div><!--container-->
+                    <!--jquery---->
+                    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                    <script src="https://cdn.rtlcss.com/bootstrap/v4.5.3/js/bootstrap.min.js" integrity="sha384-VmD+lKnI0Y4FPvr6hvZRw6xvdt/QZoNHQ4h5k0RL30aGkR9ylHU56BzrE2UoohWK" crossorigin="anonymous"></script>
+                    <script src="js/index.js"></script>
+                    <script src="js/language.js" type="text/javascript"></script>
+</body>
+</html>

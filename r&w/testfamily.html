@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
+<style>
+body{
+
+margin: 0;
+padding: 0;
+direction: rtl;
+background-color: #f2f3f7
+}
+.content{
+     background-color: white;
+     border-radius: 2.8vh;
+     box-shadow: 0 0 10px rgba(173,185,203,0.5);
+     box-sizing: border-box;
+     direction: ltr;
+}
+.navbar-brand {
+         padding-top: unset;
+    
+        }
+        #navbarSupportedContent {
+            padding-top: unset;
+            
+        }
+        .navbar {
+   
+   align-items:center;
+   padding: unset;
+   }
+   
+
+</style>
+</head>
+<body>
+    <div class="row">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#" style="font-size:40px;font-weight: bolder;"><span><img src="images/splogo.png" width="80">سوبر بيبى</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon outline-none">
+                    <i class="fas fa-align-justify"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse whoareu mr-auto" id="navbarSupportedContent" style="margin-left:unset;">
+                <ul class="navbar-nav  mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link ml-3 contactus" href="index.html">الصفحه الرئيسيه</a>
+                   </li>
+                    <li class="nav-item ">
+                     <!-- Button trigger modal -->
+                        <a class="nav-link ml-3 whoareuu"  data-toggle="modal" data-target="#exampleModal">من نحن</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link ml-3 contactus" href="#">تواصل معانا</a>
+                    </li>
+                </ul>
+                </div>
+</nav>
+
+    </div>
+    </div>
+    <div class="container content">
+    <div class="container pt-3 justify-content-center col-sm-4 ">
+        <button type="button" class="btn btn-danger" id="btnnext" data-toggle="tooltip" data-placement="bottom" title="انتقل للتالى" onclick="nextimg()"> < </button>
+        <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="أعد الاستماع" onclick="playsound()">أعد الاستماع</button>
+        <button type="button" class="btn btn-danger" id="btnlast" data-toggle="tooltip" data-placement="bottom" title="رجوع" onclick="lastimg()"> > </button>
+        </div>
+        <div class="container pt-3">
+            <div class="row">
+                <div class="pics">
+        <img id="imgslide" src="animalbook/animalbook.jpeg" alt="" width="100%" height="90%">  
+        </div>
+        </div>
+        
+            </div>
+        </div>
+
+    <audio id="sound" src="animalbook/animalbook.mp3" autoplay></audio>
+
+
+    <script>
+        var mybook=['animalbook.jpeg','cat.jpeg','checkin.jpeg','sheep.jpeg','cow.jpeg'];
+        var mysounds=['animalbook.mp3','cat.mp3','chicken.mp3','sheep.mp3','cow.mp3'];
+        var imgslide=document.getElementById("imgslide");
+        var sound=document.getElementById("sound");
+         var i=0;
+        function nextimg(){
+            document.getElementById("btnlast").style.visibility="visible";
+
+if(i==4){
+document.getElementById("btnnext").style.visibility="hidden";
+}
+else{
+           
+imgslide.src='animalbook/'+mybook[i+1];
+sound.src='animalbook/'+mysounds[i+1];
+sound.play();
+i++;
+console.log(i);
+}}
+function lastimg(){
+    document.getElementById("btnnext").style.visibility="visible";
+    if(i==0){
+    document.getElementById("btnlast").style.visibility="hidden";
+
+    }else{
+    imgslide.src='animalbook/'+mybook[i-1];
+sound.src='animalbook/'+mysounds[i-1];
+sound.play();
+console.log("img"+mybook[i-1])
+ i--;
+}}
+function playsound(){
+    document.getElementById("btnlast").style.visibility="visible";
+    document.getElementById("btnnext").style.visibility="visible";
+sound.src='animalbook/'+mysounds[i];
+
+    sound.play();
+}
+
+
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+</body>
+</html>

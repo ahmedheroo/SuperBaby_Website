@@ -1,0 +1,263 @@
+*{
+    padding:0;
+    margin:0;
+}
+#container{
+    background-color:#f2f3f7;
+}
+#slider:hover{
+    filter:opacity(.6);
+    cursor:pointer;
+}
+#slider{
+    background-image:url('../images/6.jpg');
+}
+.d{
+    opacity:0;
+}
+#header
+{
+height: 100vh;
+ 
+ width: 100%;
+ height: 100vh;
+ box-sizing: border-box;
+ background: #9dd5f8 url('../images/icon1-removebg-preview (4).png') no-repeat;
+ color: #fff;
+ position: relative;
+}
+#banner-text{
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    font-size: 2.2vw;
+    width: 40%;
+}
+
+ /*background:url("../images/icon1.png") no-repeat #9dd5f8;
+ background-position:right;
+ background-repeat: no-repeat;*/
+
+.rtl{direction:rtl!important;}
+#banner-text h1{text-align:right;}
+
+
+#header .navbar ul li a,#banner-text h1{
+    color:#bb2768;
+}
+#banner-text,#banner-text h1,#banner-text p{
+    color:white;
+}
+
+.btn_group button,.btn_group a{
+    width:40%;
+}
+.btn_group a{
+    border:none;
+}
+.btn_group a:hover{
+    box-shadow:2px 2px 2px 4px  rgba(241, 229, 229,.4),
+             -2px -2px 2px 4px  rgba(241, 229, 229,.4) ;
+}
+#department{
+    background-color:#f2f3f7;
+}
+#department .dept{
+    padding:20px;
+    background-color:white;
+    margin:5px;
+    text-align: center;
+}
+#department .container  h1{
+    text-align: center;
+    
+}
+#btn-group{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* .banner {
+    position: relative;
+}
+.banner img {
+    width: 100%;
+    height: 500px;
+}
+#container #header ul{
+    float:right;
+    font-size:24px;
+    position: absolute;
+    top: 0;
+    
+} */
+/* a{
+    text-decoration: none;;
+}
+
+#container #header ul li,#container #header ul li a{
+    display:inline-block;
+    margin:10px;
+}
+#container #header ul li a{
+    text-decoration: none;
+   color:white;
+   border-radius:20%;
+   padding:10px;
+   width:70%;
+   text-align: center;
+    
+}
+#container #header ul li a:hover,#container button:hover,#active{
+    background-color:#bb2768;
+}*/
+.login{
+border-radius: 1.5vw;
+padding: 0.2vw 2.5vw;
+color: #57773e;
+/*font-size: 1.2vw;*/
+border: 0;
+/*margin: -0.2vw 10vw 0 5vw;*/
+cursor: pointer;
+border: 2px solid #fff;
+background-color: transparent;
+color: #fff;
+/*margin:30px;
+position: absolute;
+top: 0;
+left: 87%;*/
+
+}
+.login:hover{
+    background-color:#bb2768;
+    color:white;
+}
+#slider button{
+border-radius: 1.5vw;
+width:10vw;
+border: 0;
+cursor: pointer;
+border: 2px solid #fff;
+background-color:#bb2768;
+color: #fff;
+margin:30px;
+height:25px;}
+#slider div{
+    margin-top:280px;
+   /* background-color:red;*/
+}
+#welcome{
+    width:30%;
+    position:relative;
+    top:390px;
+    left:470px;
+   text-align: center;
+   color:white;
+   background: rgba(0,0,0,0.4);
+    background-color: balck;
+    display:none;
+  
+
+    
+}
+#welcome h2{
+    font-size: 40px;
+}
+/***sections**********/
+#sections{
+    width:80%;
+    margin:30px auto;
+    padding:20px;
+    text-align:center;
+    margin-top: 10px;
+   
+}
+#sections div{
+   display:inline-block;
+   margin:20px;
+   background-color:white;
+   padding:20px;
+   cursor: pointer;;
+}
+/************about section************/
+/* #about{
+    width:80%;
+    margin:50px auto;
+    background-color:white;
+    padding:30px;
+    background-image: url("../images/l.png");
+    background-position: top right ;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+   
+   
+}
+/* #about div{
+    display:inline-block;
+}
+#about h1{
+    margin-bottom:20px;
+}
+#about p{
+    line-height:200%;
+}
+/**********slider**********/
+/* div#slider{
+    width:80%;
+    margin:50px auto;
+    border:2px solid white;
+    height:400px;
+}
+#sliderCon div{
+   float:right; 
+}
+#sliderCon #nxtBtn,#prevBtn{
+    margin-top:200px;
+    width:10%;
+   
+}
+#sliderCon{
+    background-color:white;
+    height:3000px;
+    overflow:hidden;
+}
+/****footer
+#footer{
+    background-color:#098dcb;
+    height:100px;
+    margin-top:60px;
+    color:white;
+    text-align: center;
+    padding-top:30px;
+}
+#footer h5{
+padding-top:19px;
+}
+
+#footer #footgrp{
+    text-align:left;
+    line-height:30px;
+    text-indent: 20px;
+} 
+#up{
+    display:none;
+} ****/
+/*********header************/
+/* #active,#login{
+    display: block;
+    
+   
+}
+#active{
+    padding:5px;
+}
+.navbar-nav .nav-item{
+ margin-left:50px;
+ font-weight: bold;
+}
+#banner-text h1{
+    margin-bottom:20px; 
+}*/
+/***********na

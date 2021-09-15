@@ -1,0 +1,174 @@
+*{
+  font-family: myFirstFont;
+}
+ header{
+   text-align: center;
+   overflow: hidden;
+ }
+body{
+
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+   background-color: #f2f3f7
+}
+.class-icon{
+    float: right;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 10px 10px 10px 10px ;
+    border-radius: 6px;
+    background-color: rgb(183, 226, 231);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+text-shadow: #000 1px 1px 1px;
+cursor: pointer;
+position: absolute;
+z-index: 4;
+}
+ 
+
+ .content {
+     /* background-color: #854747b6; */
+     /* padding: 20px; */
+     /* height: 250px; */
+     
+     border-radius: 0.5vw;
+     box-shadow: 0 0 10px rgba(173,185,203,0.5);
+     text-align: center;
+     margin-bottom: 1.5vw;
+     /* overflow: hidden; */
+     padding-bottom: 1em;
+     font-size: 1.2vw;
+     /* position: relative; */
+     cursor: pointer;
+     box-sizing: border-box;
+    /* box-shadow:  0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60073; */
+    transition: box-shadow 1s;
+
+ }
+   
+  
+   .content:hover{
+    
+    -moz-box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60000, 0 0 6px #e60000, 0 0 10px #e60000, 0 0 20px #e60000, 0 0 30px #e60000;
+    -webkit-box-shadow:0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60000, 0 0 6px #e60000, 0 0 10px #e60000, 0 0 20px #e60000, 0 0 30px #e60000;
+    box-shadow:  0 0 5px #fff, 0 0 5px #fff, 0 0 5px #e60000, 0 0 6px #e60000, 0 0 10px #e60000, 0 0 20px #e60000, 0 0 30px #e60000;
+   
+   }
+ 
+ img{
+     padding: 10px;
+   
+ }
+ a,a:hover{
+     text-decoration: none;
+ }
+ h4{
+   text-align: center;
+    color: #d61616; 
+ 
+ }
+ #innercontainer{
+     background-color: white;
+     border-radius: 2.8vh;
+     box-shadow: 0 0 10px rgba(173,185,203,0.5);
+     box-sizing: border-box;
+
+  
+     
+ }
+  
+/* anime letters */
+ .ml2 {
+   text-align: center;
+   
+    font-weight: 900;
+    font-size: 8.5em;
+    font-family: myfirstfont;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 19px #ff0404;
+  }
+  
+
+  @font-face {
+    font-family: myFirstFont;
+    src: url(Asmaa\ Font.otf);
+ }
+  
+ #backcover{
+	height: 100vh; 
+ 
+	background: linear-gradient(rgba(184, 6, 30, 0.705), rgba(0, 0, 0, 0.212)), url(cover6.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+  padding: 0;
+  
+ }
+ /*Menu*/
+ nav {
+  width: 800px;
+  margin: 0 auto;
+}
+
+ul.tabs {
+  float: right;
+  clear: both;
+  width: 330px;
+  list-style: none;
+  border-bottom: 2px solid #ff0101;
+  position: relative;
+  font-size: 1.061em;
+  padding: 0;
+}
+ul.tabs li {
+  float: right;
+}
+ul.tabs li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #666;
+  padding: 12px 20px;
+  min-width: 85px;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+ul.tabs li.active a {
+  color: #c91515;
+}
+
+#magic-line {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background: #c91515;
+  transition: all 0.3s;
+}
+/*Clear Fix*/
+.tabs:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+ 
+.modal-dialog
+{
+  width: 500px;
+  height: 500px;
+
+}
+.modal-content
+{
+  width: 500px; height: 400px;
+  background: transparent;
+  border: none;
+
+}
